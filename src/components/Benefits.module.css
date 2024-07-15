@@ -1,0 +1,102 @@
+.benefit {
+  /* padding: 3rem 6rem; */
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.benefit div {
+  flex: 1;
+  color: #fff;
+  height: 60rem;
+  text-align: center;
+  background-size: cover;
+  padding: 0 8rem 4rem 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefit div:nth-of-type(1) {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.501),
+      rgba(0, 0, 0, 0.501)
+    ),
+    url(/images/parent.jpeg) no-repeat center;
+}
+
+.benefit div:nth-of-type(2) {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.501),
+      rgba(0, 0, 0, 0.501)
+    ),
+    url(/images/comms.jpeg) no-repeat center;
+}
+
+.benefit div:nth-of-type(3) {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.501),
+      rgba(0, 0, 0, 0.501)
+    ),
+    url(/images/feddback.jpeg) no-repeat center;
+}
+
+.benefit h3 {
+  font-size: 3rem;
+  transform: translateY(5rem);
+}
+
+.benefit p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  background: #031779;
+  padding: 1.5rem 0;
+  border-radius: 1rem;
+  transform: translateY(15rem);
+}
+
+.benefit div:nth-of-type(1):hover p,
+.benefit div:nth-of-type(1):hover h3 {
+  transform: translateY(0rem);
+  transition: all 1s;
+}
+
+.benefit div:nth-of-type(2):hover p,
+.benefit div:nth-of-type(2):hover h3 {
+  transform: translateY(0rem);
+  transition: all 1s;
+}
+
+.benefit div:nth-of-type(3):hover p,
+.benefit div:nth-of-type(3):hover h3 {
+  transform: translateY(0rem);
+  transition: all 1s;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .benefit {
+    flex-direction: column;
+  }
+
+  .benefit div {
+    flex: 0 0 auto;
+    /* height: 100rem; */
+  }
+
+  .benefit p {
+    padding: 1.5rem;
+  }
+
+  .benefit p,
+  .benefit h3 {
+    transform: translateY(0);
+  }
+}

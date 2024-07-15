@@ -1,0 +1,62 @@
+.feature {
+  color: #fff;
+  padding: 6rem;
+  background: var(--primary-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature figure {
+  background-color: var(--primary-color-1);
+  padding: 2rem 2rem 4rem 2rem;
+  text-align: center;
+  flex: 0 0 auto;
+  width: 30%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature figure:hover {
+  box-shadow: 0 0 1rem rgba(71, 70, 70, 0.5);
+  border-radius: 1.5rem;
+  transition: all 1s;
+}
+
+.feature div {
+  width: 100%;
+  height: auto;
+}
+
+.feature h3 {
+  font-size: 2.5rem;
+}
+
+.feature p {
+  font-size: 1.8rem;
+  width: 80%;
+}
+
+.feature img {
+  display: block;
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .feature {
+    padding: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .feature figure {
+    width: 100%;
+  }
+}
